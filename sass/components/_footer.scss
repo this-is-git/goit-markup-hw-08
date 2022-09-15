@@ -1,0 +1,148 @@
+.footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+  .logo__decor {
+    color: #fff;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__address {
+  font-style: normal;
+  @media screen and(max-width:$desctop) {
+    margin-bottom: 60px;
+  }
+}
+
+.address__street {
+  line-height: 1.71;
+  color: #fff;
+  margin-bottom: 9px;
+}
+
+.address__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__wrapper {
+  @include flex($alignItems: center, $flexDirection: column);
+  @media screen and(max-width:$desctop) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    @include flex(
+      $alignItems: baseline,
+      $flexDirection: row,
+      $flexWrap: wrap,
+      $justifyContent: space-around
+    );
+  }
+}
+
+.footer__contacts {
+  @media screen and(min-width:$desctop) {
+    margin-right: 70px;
+  }
+}
+
+.footer__title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  @media screen and(max-width:$tablet) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__soc {
+  display: flex;
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-list__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
+
+.footer-form {
+  @media screen and(min-width:$desctop) {
+    margin-left: auto;
+  }
+}
+
+.footer-form__input {
+  @media screen and(max-width:$tablet) {
+    width: 100%;
+  }
+  @media screen and(min-width:$tablet) {
+    width: 450px;
+  }
+  @media screen and(max-width:$desctop) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width:$desctop) {
+    width: 358px;
+  }
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+  color: #fff;
+  transition: border-color 250ms var(--transition-timing);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.footer-form__form {
+  @media screen and(min-width:$desctop) {
+    display: flex;
+  }
+}
+
+.footer-form__btn {
+  @media screen and(min-width:$tablet) and (max-width: $desctop) {
+    display: block;
+    margin: 0 auto;
+  }
+  @extend %btn;
+  padding: 10px 28px;
+}
+
+.send-icon {
+  display: inline-block;
+  vertical-align: middle;
+}

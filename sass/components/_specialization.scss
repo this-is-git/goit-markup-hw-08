@@ -1,0 +1,28 @@
+.specialization {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  padding-top: 0;
+}
+
+.specialization__list {
+  display: flex;
+}
+
+.specialization__item {
+  @extend %mr-30;
+  position: relative;
+}
+
+.specialization__name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
