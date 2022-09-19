@@ -44,7 +44,7 @@ body.overflow {
   padding: 48px 15px 48px 40px;
   transform: translateX(-100%);
   transition: transform 250ms var(--transition-timing);
-  background-color: #fff;
+  background-color: var(--white);
   overflow: auto;
   z-index: 1;
 }

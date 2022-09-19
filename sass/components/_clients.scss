@@ -26,9 +26,9 @@
 .clients__link {
   @include flex();
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--gray-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--gray-color);
   transition: border-color 250ms var(--transition-timing),
     color 250ms var(--transition-timing);
   &:hover,

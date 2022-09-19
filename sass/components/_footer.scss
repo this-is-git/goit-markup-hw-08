@@ -1,8 +1,8 @@
 .footer {
   padding: 60px 0;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
   .logo__decor {
-    color: #fff;
+    color: var(--white);
   }
 }
 
@@ -20,7 +20,7 @@
 
 .address__street {
   line-height: 1.71;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 9px;
 }
 
@@ -60,7 +60,7 @@
 .footer__title {
   line-height: 1.14;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 20px;
 }
 
@@ -82,7 +82,7 @@
 
 .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--white);
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -119,7 +119,7 @@
   border-radius: 4px;
   background-color: transparent;
   margin-right: 12px;
-  color: #fff;
+  color: var(--white);
   transition: border-color 250ms var(--transition-timing);
   &:hover,
   &:focus {
