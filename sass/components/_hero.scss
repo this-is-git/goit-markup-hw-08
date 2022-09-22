@@ -1,12 +1,13 @@
 .heroi {
   padding: 118px 0;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media screen and(min-width:$desctop) {
     padding: 200px 0;
     background-size: 1600px;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   background-color: var(--bg-color);

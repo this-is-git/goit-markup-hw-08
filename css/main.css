@@ -254,6 +254,11 @@ summary {
   --title-color: #212121;
   --accent-color: #2196f3;
   --main-color: #757575;
+  --white: #fff;
+  --bg-color: #2f303a;
+  --black: #000;
+  --silver-color: #f5f4fa;
+  --gray-color: #afb1b8;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -274,7 +279,7 @@ summary {
   letter-spacing: 0.06em;
   line-height: 1.87;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   background-color: var(--accent-color);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -410,7 +415,7 @@ img {
 }
 
 .logo__decor {
-  color: #000;
+  color: var(--black);
 }
 
 .header__menu,
@@ -534,7 +539,7 @@ body.overflow {
   padding: 48px 15px 48px 40px;
   transform: translateX(-100%);
   transition: transform 250ms var(--transition-timing);
-  background-color: #fff;
+  background-color: var(--white);
   overflow: auto;
   z-index: 1;
 }
@@ -613,13 +618,15 @@ body.overflow {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/heroi-mobile.jpg");
 }
 @media screen and (min-width: 1199.98px) {
   .heroi {
     padding: 200px 0;
     background-size: 1600px;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 480.98px) {
@@ -660,7 +667,7 @@ body.overflow {
   line-height: 1.61;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1199.98px) {
@@ -713,7 +720,7 @@ body.overflow {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f4fa;
+  background-color: var(--silver-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -763,12 +770,12 @@ body.overflow {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--silver-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -806,10 +813,12 @@ body.overflow {
 
 .team__descr {
   padding: 30px 0;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .team__name {
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.18;
   color: var(--title-color);
   margin-bottom: 10px;
@@ -841,7 +850,7 @@ body.overflow {
   flex-wrap: nowrap;
   width: 44px;
   height: 44px;
-  color: #afb1b8;
+  color: var(--gray-color);
   transition: background-color 250ms var(--transition-timing), color 250ms var(--transition-timing);
   border-radius: 50%;
 }
@@ -852,7 +861,7 @@ body.overflow {
 
 .team-social__link:hover, .team-social__link:focus {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--white);
 }
 
 .clients__list {
@@ -889,9 +898,9 @@ body.overflow {
   flex-direction: row;
   flex-wrap: nowrap;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--gray-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--gray-color);
   transition: border-color 250ms var(--transition-timing), color 250ms var(--transition-timing);
 }
 .clients__link:hover, .clients__link:focus {
@@ -905,10 +914,10 @@ body.overflow {
 
 .footer {
   padding: 60px 0;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
 }
 .footer .logo__decor {
-  color: #fff;
+  color: var(--white);
 }
 
 .footer__logo {
@@ -927,7 +936,7 @@ body.overflow {
 
 .address__street {
   line-height: 1.71;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 9px;
 }
 
@@ -970,9 +979,10 @@ body.overflow {
 }
 
 .footer__title {
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 20px;
 }
 
@@ -992,7 +1002,7 @@ body.overflow {
 
 .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--white);
 }
 .social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
@@ -1015,7 +1025,7 @@ body.overflow {
   border-radius: 4px;
   background-color: transparent;
   margin-right: 12px;
-  color: #fff;
+  color: var(--white);
   transition: border-color 250ms var(--transition-timing);
 }
 @media screen and (max-width: 767.98px) {
@@ -1068,7 +1078,7 @@ body.overflow {
   font-family: inherit;
   font-size: 16px;
   cursor: pointer;
-  background-color: #f5f4fa;
+  background-color: var(--silver-color);
   color: var(--title-color);
   font-weight: 500;
   line-height: 1.62;
@@ -1078,7 +1088,7 @@ body.overflow {
   transition: box-shadow 250ms var(--transition-timing), color 250ms var(--transition-timing), background-color 250ms var(--transition-timing);
 }
 .portfolio__btn:hover, .portfolio__btn:focus {
-  color: #fff;
+  color: var(--white);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -1122,7 +1132,6 @@ body.overflow {
   width: 100%;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 250ms var(--transition-timing);
 }
 @media screen and (max-width: 767.98px) {
   .cases__item:not(:last-child) {
@@ -1141,10 +1150,17 @@ body.overflow {
     margin: 15px;
   }
 }
-.cases__item:hover {
+
+.cases__link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  transition: box-shadow 250ms var(--transition-timing);
+}
+.cases__link:hover, .cases__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.cases__item:hover .cases__overlay {
+.cases__link:hover .cases__overlay, .cases__link:focus .cases__overlay {
   transform: translateY(0);
 }
 
@@ -1168,7 +1184,7 @@ body.overflow {
 .cases__descr {
   font-size: 18px;
   line-height: 1.55;
-  color: #fff;
+  color: var(--white);
 }
 
 .cases__info {
@@ -1182,6 +1198,7 @@ body.overflow {
   letter-spacing: 0.06em;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
   color: var(--title-color);
 }
 
@@ -1211,7 +1228,7 @@ body.overflow {
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   min-height: 609px;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--transition-timing);
@@ -1355,7 +1372,7 @@ body.overflow {
   height: 16px;
   margin-right: 7px;
   border-radius: 2px;
-  border: 2px solid #000;
+  border: 2px solid var(--black);
   transition: border 250ms var(--transition-timing), background-color 250ms var(--transition-timing);
   display: flex;
   flex-shrink: 0;
